@@ -10,7 +10,6 @@ console.log('websockets server started');
 
 ws.on('connection', function(socket) {
     console.log('client connection established');
-
     messages.forEach(function(msg) {
         socket.send(msg);
     });
